@@ -1,0 +1,38 @@
+{
+  "units": [
+    { "id": 1, "type": "Length", "label": "Kilometre", "symbol": "km" },
+    { "id": 2, "type": "Length", "label": "Metre", "symbol": "m" },
+    { "id": 3, "type": "Length", "label": "Centimetre", "symbol": "cm" },
+    { "id": 4, "type": "Length", "label": "Millimetre", "symbol": "mm" },
+    { "id": 5, "type": "Weight", "label": "Kilogram", "symbol": "kg" },
+    { "id": 6, "type": "Weight", "label": "Gram", "symbol": "g" },
+    { "id": 7, "type": "Weight", "label": "Pound", "symbol": "lb" },
+    { "id": 8, "type": "Temperature", "label": "Celsius", "symbol": "C" },
+    { "id": 9, "type": "Temperature", "label": "Fahrenheit", "symbol": "F" },
+    { "id": 10, "type": "Temperature", "label": "Kelvin", "symbol": "K" },
+    { "id": 11, "type": "Volume", "label": "Litre", "symbol": "L" },
+    { "id": 12, "type": "Volume", "label": "Millilitre", "symbol": "mL" },
+    { "id": 13, "type": "Volume", "label": "Gallon", "symbol": "gal" }
+  ],
+  "conversions": [
+    { "id": 1, "from": "km", "to": "m", "factor": 1000, "formula": null },
+    { "id": 2, "from": "m", "to": "km", "factor": 0.001, "formula": null },
+    { "id": 3, "from": "m", "to": "cm", "factor": 100, "formula": null },
+    { "id": 4, "from": "cm", "to": "m", "factor": 0.01, "formula": null },
+    { "id": 5, "from": "cm", "to": "mm", "factor": 10, "formula": null },
+    { "id": 6, "from": "mm", "to": "cm", "factor": 0.1, "formula": null },
+    { "id": 7, "from": "kg", "to": "g", "factor": 1000, "formula": null },
+    { "id": 8, "from": "g", "to": "kg", "factor": 0.001, "formula": null },
+    { "id": 9, "from": "kg", "to": "lb", "factor": 2.20462, "formula": null },
+    { "id": 10, "from": "lb", "to": "kg", "factor": 0.453592, "formula": null },
+    { "id": 11, "from": "C", "to": "F", "factor": null, "formula": "(x*9/5)+32" },
+    { "id": 12, "from": "F", "to": "C", "factor": null, "formula": "(x-32)*5/9" },
+    { "id": 13, "from": "C", "to": "K", "factor": null, "formula": "x+273.15" },
+    { "id": 14, "from": "K", "to": "C", "factor": null, "formula": "x-273.15" },
+    { "id": 15, "from": "L", "to": "mL", "factor": 1000, "formula": null },
+    { "id": 16, "from": "mL", "to": "L", "factor": 0.001, "formula": null },
+    { "id": 17, "from": "L", "to": "gal", "factor": 0.264172, "formula": null },
+    { "id": 18, "from": "gal", "to": "L", "factor": 3.78541, "formula": null }
+  ],
+  "history": []
+}
