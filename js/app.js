@@ -11,8 +11,24 @@ document.addEventListener("DOMContentLoaded", async () => {
   };
 
   function attachEventListeners() {
-    // listeners will be added in later use cases
-  }
+
+  // UC-JS-15: Type card clicks
+  document.querySelectorAll(".type-card").forEach(card => {
+    card.addEventListener("click", async () => {
+      state.type = card.dataset.type;
+      setActive(document.querySelector("#type-selector"), card, ".type-card");
+      document.querySelector("#from-value").value = "";
+      document.querySelector("#to-value").value = "";
+      state.fromVal = null;
+      state.toVal = null;
+      state.fromUnit = "";
+      state.toUnit = "";
+      showResult(0, "");
+      await loadUnits(state.type);
+    });
+  });
+
+}
 
   async function loadUnits(type) {
     const units = await getUnits(type);
