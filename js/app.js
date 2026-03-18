@@ -27,6 +27,23 @@ document.addEventListener("DOMContentLoaded", async () => {
       await loadUnits(state.type);
     });
   });
+  // UC-JS-16: Action tab clicks
+  document.querySelectorAll(".action-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.action = btn.dataset.action;
+      setActive(document.querySelector("#action-selector"), btn, ".action-btn");
+      toggleOperators(state.action === "Arithmetic");
+      showResult(0, "");
+    });
+  });
+
+  // Operator button clicks
+  document.querySelectorAll(".operator-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      state.operator = btn.dataset.op;
+      setActive(document.querySelector("#operator-selector"), btn, ".operator-btn");
+    });
+  });
 
 }
 
